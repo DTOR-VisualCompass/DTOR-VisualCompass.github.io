@@ -162,19 +162,18 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          We propose the San Francisco world (SFW) model, a novel structural model inspired by San Francisco's hilly terrain, enabling <b>3D inter-floor navigation</b> in urban areas rather than being limited to <b>2D intra-floor navigation</b> of various robotics platforms.
-          Our SFW consists of a single vertical dominant direction (VDD), two horizontal dominant directions (HDDs), and four sloping dominant directions (SDDs) sharing a common inclination angle.
-          Although SFW is a more general model than the Manhattan world (MW), it is a more compact model than the mixture of Manhattan world (MMW).
-          Leveraging the structural regularities of SFW, such as uniform inclination angle and geometric patterns of the four SDDs, we design an efficient and robust DD/vanishing point estimation method by aggregating sloping line normals on the Gaussian sphere.
-          We further utilize the structural patterns of SFW for the 3-DoF visual compass, the rotational motion tracking from a single line and plane, which corresponds to the theoretical minimal sampling for 3-DoF rotation estimation.
-          Our method demonstrates enhanced adaptability in more challenging inter-floor scenes in urban areas and the highest rotational tracking accuracy compared to state-of-the-art methods.
-          We release the first dataset of sequential RGB-D images captured in San Francisco world (SFW) and open source codes at: 
-          <a href="https://SanFranciscoWorld.github.io/" style="color: magenta;">https://SanFranciscoWorld.github.io/</a>.
+            We propose a <b>Digital Twin-Based Outlier Rejection (DTOR)</b> method for drift-free 3-DoF rotational motion estimation of free-flying robots in cluttered environments such as the <b>International Space Station (ISS)</b>.
+            By matching detected line features in RGB images with rendered images from a <b>clutter-free 3D CAD model</b> of the ISS, we effectively filter out clutter-induced outliers and extract reliable structural lines aligned with the <b>Manhattan World (MW)</b>.
+            Combined with a dominant plane extracted from the depth image, our method estimates the camera’s absolute rotation using only a single line and plane, the theoretical minimal configuration.
+            Extensive evaluations on the <b>Astrobee dataset</b> demonstrate that our method significantly reduces rotational drift and outperforms state-of-the-art SLAM and visual compass systems, especially under extreme clutter and occlusion.
+            Project page and resources are available at: 
+            <a href="https://DTOR-VisualCompass.github.io/" style="color: magenta;">https://DTOR-VisualCompass.github.io/</a>.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
+
   
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
