@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="San Francisco World: Leveraging Structural Regularities of Slope for 3-DoF Visual Compass">
+  <meta name="keywords" content="3-DoF visual compass, Slope-based orientation, Autonomous systems">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>San Francisco World: Leveraging Structural Regularities of Slope for 3-DoF Visual Compass</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LYK5B1RWXZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LYK5B1RWXZ');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/SFW_thumnail.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <style>
+    .no-wrap {
+    white-space: nowrap; /* Prevents wrapping for the second line */
+    }
+    .publication-title {
+      max-width: 1200px; /* 타이틀의 최대 가로 폭을 설정 */
+      font-size: 2.5rem; /* 글자 크기 조정 */
+      margin: 0 auto; /* 가운데 정렬 */
+      line-height: 1.2; /* 줄 간격 설정 */
+    }
+  </style>
+  <style>
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">San Francisco World: Leveraging Structural Regularities of Slope for 3-DoF Visual Compass</h1>
+
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">IEEE RA-L 2024</span>
+          </div>
+
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">
+              Jungil Ham<sup>1*</sup>,</span>
+            <span class="author-block">
+              Minji Kim<sup>1</sup>,</span>
+            <span class="author-block">
+              Suyoung Kang<sup>2</sup>,</span>
+            <span class="author-block">
+              Kyungdon Joo<sup>3</sup>,</span>
+            <span class="author-block">
+              Haoang Li<sup>4</sup>,</span>
+            <span class="author-block">
+              Pyojin Kim<sup>1†</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-affiliations">
+            <span class="author-block"><sup>1</sup> Gwangju Institute of Science and Technology (GIST) </span>
+            <span class="author-block"><sup>2</sup> UMass Amherst </span>
+            <span class="author-block"><sup>3</sup> UNIST </span>
+            <span class="author-block"><sup>4</sup> HKUST </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="./static/paper.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://youtu.be/vXUFc_kgDqs?si=cE5tC-qE6YqV1ukO"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Jungil-Ham/SanFranciscoWorld"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code </span>
+                </a>
+              </span>
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="./static/supple.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supplementary Materials</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+            <div class="hero-body" style="text-align: center">
+                <div class="columns is-centered">
+                        <!-- <img src="./static/images/page-head-0018.gif">
+                         -->
+                  <video poster="" autoplay="" muted="" loop="" style="pointer-events: none;">
+                    <source src="./static/videos/teaser_video.mp4" type="video/mp4">
+                  </video>
+                </div>
+            </div>
+  </div>
+</section> 
+  
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          We propose the San Francisco world (SFW) model, a novel structural model inspired by San Francisco's hilly terrain, enabling <b>3D inter-floor navigation</b> in urban areas rather than being limited to <b>2D intra-floor navigation</b> of various robotics platforms.
+          Our SFW consists of a single vertical dominant direction (VDD), two horizontal dominant directions (HDDs), and four sloping dominant directions (SDDs) sharing a common inclination angle.
+          Although SFW is a more general model than the Manhattan world (MW), it is a more compact model than the mixture of Manhattan world (MMW).
+          Leveraging the structural regularities of SFW, such as uniform inclination angle and geometric patterns of the four SDDs, we design an efficient and robust DD/vanishing point estimation method by aggregating sloping line normals on the Gaussian sphere.
+          We further utilize the structural patterns of SFW for the 3-DoF visual compass, the rotational motion tracking from a single line and plane, which corresponds to the theoretical minimal sampling for 3-DoF rotation estimation.
+          Our method demonstrates enhanced adaptability in more challenging inter-floor scenes in urban areas and the highest rotational tracking accuracy compared to state-of-the-art methods.
+          We release the first dataset of sequential RGB-D images captured in San Francisco world (SFW) and open source codes at: 
+          <a href="https://SanFranciscoWorld.github.io/" style="color: magenta;">https://SanFranciscoWorld.github.io/</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-2">Video</h2>
+        <div class="publication-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/vXUFc_kgDqs?si=QNuy_jdms1l_1Xh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+    
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{ham2024san,
+  author    = {Jungil Ham, Minji Kim, Suyoung Kang, Kyungdon Joo, Haoang Li, Pyojin Kim},
+  title     = {San Francisco World: Leveraging Structural Regularities of Slope for 3-DoF Visual Compass},
+  journal   = {IEEE Robotics and Automation Letters},
+  year      = {2024},
+  publisher = {IEEE}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./static/paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/jungilha/SanFranciscoWorld.github.io" class="external-link">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p style="text-align: center">
+            Thanks <a href="https://nerfies.github.io/">Nerfies</a> for sharing the page template.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
